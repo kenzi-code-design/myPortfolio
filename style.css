@@ -1,0 +1,555 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    min-height: 100vh;
+}
+p {
+    opacity: 0.8;
+}
+.navigation {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 8% 10px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.menu, .close-icon {
+    display: none;
+    z-index: 1;
+}
+.logo {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.text {
+    color: purple;
+}
+.nav-menu {
+    width: 82%;
+}
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    white-space: nowrap;
+}
+.nav-menu a {
+    color: black;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.nav-menu a:first-child {
+    margin-left: 0;
+}
+.nav-menu a:hover {
+    color: purple;
+}
+.nav-btn {
+    background: purple;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    transition: all .5s linear;
+    outline: none;
+}
+.nav-btn:hover {
+    box-shadow: 0 5px 40px 5px purple;
+}
+section {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.home-image {
+    background: url(images/1681.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    flex-basis: 500px;
+    flex-shrink: 2;
+}
+.home {
+    scroll-margin-top: 60px;
+    flex-basis: 500px;
+    flex-shrink: 1;
+}
+.home p {
+    font-size: small;
+    letter-spacing: 0.2px;
+    margin-bottom: 20px;
+}
+.section1 h5 {
+    font-size: 18px;
+}
+.section1 h1 {
+    font-size: 75px;
+    letter-spacing: 1px;
+    margin: 15px 0 3px 0;
+}
+.section1 h4 {
+    margin-bottom: 15px;
+}
+.fa-brands {
+    border: 2px solid black;
+    border-radius: 50%;
+    color: black;
+    display: inline-flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+}
+.fa-brands:hover {
+    font-size: 20px;
+    transform: scale(1.1);
+}
+.aboutme {
+    background: purple;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    text-transform: capitalize;
+    transition: all 0.5s linear;
+    outline: none;
+}
+.aboutme:hover {
+    box-shadow: 0 0 40px 5px purple;
+}
+.sec2 {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 div {
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 45px;
+    margin-left: 20px;
+    text-align: center;
+    transition: all .4s ease-out;
+}
+.sec2 div:hover {
+    background: #ffffff;
+    box-shadow: 0px 0px 80px 0px rgb(216, 211, 211);
+    will-change: transform;
+    transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg) scale3d(1.05,1.05.1.05);
+}
+.sec2 div i {
+    margin-bottom: 30px;
+}
+.sec2 div h2 {
+    white-space: nowrap;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.sec2 div h5 {
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+.section2 {
+    padding: 100px 8%;
+}
+.img2 {
+    background-image: url(images/image-hero-mobile.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-basis: 500px;
+    height: 500px;
+    flex-shrink: 3;
+}
+.about {
+    width: 50%;
+    flex-shrink: 1;
+}
+.about h1 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.about h3 {
+    margin-bottom: 20px;
+}
+.about p {
+    font-size: small;
+    letter-spacing: .2px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+.about-btn {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    width: 130px;
+    height: 50px;
+    background: purple;
+    transition: all .5s ease-out;
+    outline: none;
+}
+.about-btn:hover {
+    box-shadow: 0 5px 40px 5px purple;
+}
+.section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+}
+.section3 h1 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.services div {
+    box-shadow: 10px 0 60px 0px rgb(190, 186, 186);
+    border-radius: 20px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    padding: 60px;
+    flex-basis: 45%;
+    flex-shrink: 1;
+    padding: 20px;
+    transition: all .4d linear;
+}
+.services div:hover {
+    cursor: pointer;
+    will-change: transform;
+    transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg) scale(1.05);
+}
+.services div img {
+    margin-bottom: 30px;
+}
+.services div h2 {
+    font-size: 20px;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.services div p {
+    line-height: 15px;
+    font-size: 16px;
+    line-height: 20px;
+}
+.section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 110px;
+    align-items: center;
+}
+.section4 h1 {
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+.section4 h1:nth-child(2) {
+    color: purple;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    width: 100%;
+}
+.project1 {
+    background: url(images/project1.jpeg);
+}
+
+.project2 {
+    background: url(images/project2.jpeg);
+}
+.project3 {
+    background: url(images/project3.jpeg);
+}
+.project4 {
+    background: url(images/project4.jpeg);
+}
+.project5 {
+    background: url(images/project5.jpeg);
+}
+.project6 {
+    background: url(images/project6.png);
+}
+.about-project {
+    cursor: pointer;
+    flex-shrink: 1;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: 400px;
+    margin-bottom: 40px;
+    margin-right: 40px;
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+}
+.popup {
+    background: transparent;
+    color: whitesmoke;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s linear;
+}
+.popup:hover {
+    background: radial-gradient(#191919, rgba(100, 97, 97, 0.2) 0%);
+}
+.popup h3 {
+    position: absolute;
+    bottom: 0;
+    letter-spacing: 1px;
+    transition: all .3s linear;
+    opacity: 0;
+}
+.popup:hover h3 {
+    opacity: 1;
+    bottom: 52%;
+}
+.popup p {
+    position: absolute;
+    bottom: -40px;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+.popup:hover p {
+    opacity: 1;
+    bottom: 40%;
+}
+.section5 {
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+} 
+.contact {
+    background: purple;
+    border-radius: 10px;
+    width: 80%;
+    padding: 60px;
+    text-align: center;
+    color: blanchedalmond;
+}
+.contact h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.contact p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.contact input {
+    font-weight: bold;
+    width: 45%;
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+.contact button {
+    background: orangered;
+    border: orangered;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    outline: none;
+}
+@media (max-width: 1024px) {
+    .navigation {
+        padding: 10px;
+    }
+    .section1 h1 {
+        font-size: 60px;
+    }
+    section {
+        padding: 30px;
+    }
+    .img2 {
+        margin-right: 30px;
+        height: 400px;
+    }
+    .about h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .navigation {
+        padding: 20px;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .nav-menu {
+        background: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: none;
+        white-space: nowrap
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 50px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        background: white;
+    }
+    .nav-menu a {
+        display: block;
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+    section {
+        padding: 20px;
+        display: flex;
+    }
+    .home-image {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-position: left;
+        height: 500px;
+        width: 300px;
+        transform: rotateY(180deg);
+    }
+    .section1 h1 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 600px) {
+    section {
+        display: block;
+    }
+    .section2 {
+        padding: 10px;
+        padding-top: 100px;
+    }
+    .img2 {
+        margin-right: 0;
+    }
+    .about {
+        width: 100%;
+    }
+    .img2 {
+        margin-bottom: 50px;
+    }
+    .sec2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .sec2 div {
+        margin-bottom: 50px;
+    }
+    .services {
+        display: block;
+        margin: 0;
+        margin-top: 20px;
+    }
+    .section3 h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+    .services div {
+        margin: 20px 0;
+    }
+    .section4 h1 {
+        font-size: 30px;
+        white-space: nowrap;
+    }
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-project {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .sec2 div {
+        margin: 0 0 20px 0;
+    }
+    .services div {
+        margin: 0 0 20px 0;
+    }
+    .services div h2 {
+        font-size: 20px;
+    }
+    .contact {
+        padding: 50px 20px;
+        width: 100%;
+    }
+    .contact h3 {
+        font-size: 16px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .contact p {
+        font-size: 12px;
+    }
+    .contact input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
